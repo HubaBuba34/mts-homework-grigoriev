@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group = 'ru.mtsb.esb'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    maven {
+        url "https://nexus.services.mts.ru/repository/maven-central/"
+    }
+    maven {
+        url "https://artifactory-mts.ump-hp.mbrd.ru:2222/artifactory/integration-esb-maven-local"
+    }
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}

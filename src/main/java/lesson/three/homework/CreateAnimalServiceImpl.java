@@ -1,7 +1,7 @@
 package lesson.three.homework;
 
 public class CreateAnimalServiceImpl implements CreateAnimalService {
-    public void creatAnimals(int n){
+    public void createAnimals(int n){
         for (int i = 0; i < n; i++){
             Animal animal = new CustomAnimal("Breed" + (n+1), "Name" + (n+1),
                     (n+1) * 10, "Character" + (n+1));
@@ -10,7 +10,7 @@ public class CreateAnimalServiceImpl implements CreateAnimalService {
         }
     }
 
-    public void creatAnimals(){
+    public void createAnimals(){
         int n = 5;
         int count = 0;
         do {

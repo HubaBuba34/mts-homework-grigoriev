@@ -5,9 +5,9 @@ public class Main {
         CreateAnimalServiceImpl сreateAnimalServiceImpl = new CreateAnimalServiceImpl();
         System.out.println("Run createDefaultAnimals");
         сreateAnimalServiceImpl.createDefaultAnimals();
-         System.out.println("Run creatAnimals");
-        сreateAnimalServiceImpl.creatAnimals(5);
-        System.out.println("Run Overwritten creatAnimals");
-        сreateAnimalServiceImpl.creatAnimals();
+         System.out.println("Run createAnimals");
+        сreateAnimalServiceImpl.createAnimals(5);
+        System.out.println("Run Overwritten createAnimals");
+        сreateAnimalServiceImpl.createAnimals();
     }
 }

@@ -22,8 +22,7 @@ public interface CreateAnimalService {
                     animal = new Cat();
                     break;
             }
-            System.out.println("Created Animal: " + animal.getName() + ", " + animal.getBreed() +
-                    ", " + animal.getCost() + ", " + animal.getCharacter());
+            System.out.println(animal);
            count++;
         }
     }

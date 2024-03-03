@@ -24,5 +24,12 @@ public abstract class AbstractAnimal implements Animal {
     public String getCharacter(){
         return character;
     }
+    @Override
+    public String toString(){
+        return "Created Animal: " +
+                name + ", " + breed +
+                ", " + cost + ", " + character;
+
+    }
 }
 

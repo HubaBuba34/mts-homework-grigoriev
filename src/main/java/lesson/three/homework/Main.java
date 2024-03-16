@@ -13,7 +13,7 @@ public class Main {
             System.out.println("Run Overwritten createAnimals");
             сreateAnimalServiceImpl.createAnimals();
         } catch (InvalidAnimalBirthDateException e) {
-            throw new RuntimeException(e);
+            System.out.println("Произошла ошибка");
         }
     }
 }

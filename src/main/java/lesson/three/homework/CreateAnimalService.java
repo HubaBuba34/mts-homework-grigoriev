@@ -1,10 +1,12 @@
 package lesson.three.homework;
 
+import lesson.three.homework.service.InvalidAnimalBirthDateException;
+
 import java.util.Random;
 
 public interface CreateAnimalService {
     Random random = new Random();
-     default void createDefaultAnimals(){
+     default void createDefaultAnimals() throws InvalidAnimalBirthDateException {
         int count = 0;
         while (count < 10) {
             Animal animal = new Cat();

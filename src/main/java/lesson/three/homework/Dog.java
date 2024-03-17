@@ -1,5 +1,8 @@
 package lesson.three.homework;
 
+import lesson.three.homework.service.RandomDates;
+
+import java.time.LocalDate;
 import java.util.Random;
 
 public class Dog extends Pet{
@@ -10,8 +13,9 @@ public class Dog extends Pet{
     private static double[] costs = {10000, 15000, 20000, 25000, 30000};
     private static String[] characters = {"Evil", "Amenable to training", "Wild", "Dangerous",
             "Harmless"};
+    private static LocalDate birthDate = RandomDates.createRandomDate(2008,2024);
     public Dog() {
-        super(setBreed(),setName(), setCost(),setCharacter());
+        super(setBreed(),setName(), setCost(),setCharacter(),setBirthDate());
     }
     public static String setBreed() {
         return breeds[random.nextInt(breeds.length)];
@@ -25,4 +29,5 @@ public class Dog extends Pet{
     public static String setCharacter() {
         return characters[random.nextInt(characters.length)];
     }
+    public static LocalDate setBirthDate(){return birthDate;}
 }

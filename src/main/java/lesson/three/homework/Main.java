@@ -1,10 +1,6 @@
 package lesson.three.homework;
 
 import lesson.three.homework.Animals.Animal;
-import lesson.three.homework.Animals.Dog;
-import lesson.three.homework.Animals.Enums.AnimalCharacter;
-import lesson.three.homework.Animals.Enums.AnimalName;
-import lesson.three.homework.Animals.Enums.DogBreed;
 import lesson.three.homework.Exceptions.InvalidAnimalException;
 import lesson.three.homework.Exceptions.InvalidAnimalBirthdateException;
 
@@ -27,6 +23,7 @@ public class Main {
                 throw new InvalidAnimalException("Can not check if animal was born in a leap year\n\t" +
                         e.getMessage());
             }
+
         }
     }
 }
